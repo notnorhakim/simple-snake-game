@@ -12,6 +12,8 @@ let isPaused = false;
 const GAME_SPEED = 50;
 let isRunning = false;
 let isPower = false;
+
+// Audio
 const gameOverAudio = document.getElementById("game-over-audio");
 const pointsAudio = document.getElementById("points-audio");
 const mkhAudio = document.getElementById("mkh-audio");
@@ -22,22 +24,19 @@ const chadAudio = document.getElementById("chad-audio");
 
 
 // Draw a square at the specified position
-function drawSquare(x, y, color,outline,boolean) {
+function drawSquare(x, y, color, outline, boolean) {
   ctx.fillStyle = color;
-  
   ctx.fillRect(x * 20, y * 20, 20, 20);
   ctx.lineWidth = 4;
   ctx.strokeStyle = outline;
   ctx.strokeRect(x * 20, y * 20, 20, 20);
-
-  if (boolean == true)
-  {
-    // Add a circle on top of the square
   
-  ctx.fillStyle = "black";
-  ctx.fillRect((x * 20) + 12, (y * 20)+5,3,7);
-  ctx.fillRect((x * 20) + 5, (y * 20)+5,3,7);
-  ctx.fillRect((x * 20) + 5, (y * 20)+13,10,3);
+  // Add a circle on top of the square
+  if (boolean == true) {
+    ctx.fillStyle = "black";
+    ctx.fillRect((x * 20) + 12, (y * 20) + 5, 3, 7);
+    ctx.fillRect((x * 20) + 5, (y * 20) + 5, 3, 7);
+    ctx.fillRect((x * 20) + 5, (y * 20) + 13, 10, 3);
   }
 }
 // Define function to draw blinking text
