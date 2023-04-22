@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://127.0.0.1:5500/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Case study 2: Data visualisation</title>
+
+    <!-- Libraries -->
+    <script src="./Case study 2_ Data visualisation_files/p5.min.js"></script>
+    <script src="./Case study 2_ Data visualisation_files/p5.dom.min.js"></script>
+
+    <link rel="stylesheet" href="./Case study 2_ Data visualisation_files/style.css">
+
+    <!-- Main sketch file -->
+    <script src="./Case study 2_ Data visualisation_files/sketch.js"></script>
+
+    <!-- Main visualisation files -->
+    <script src="./Case study 2_ Data visualisation_files/tech-diversity-race.js"></script>
+    <script src="./Case study 2_ Data visualisation_files/tech-diversity-gender.js"></script>
+  	<script src="./Case study 2_ Data visualisation_files/uk-food-attitudes.js"></script>
+    <script src="./Case study 2_ Data visualisation_files/pay-gap-by-job-2017.js"></script>
+    <script src="./Case study 2_ Data visualisation_files/pay-gap-1997-2017.js"></script>
+  	<script src="./Case study 2_ Data visualisation_files/nutrients-1974-2016.js"></script>
+    <script src="./Case study 2_ Data visualisation_files/climate-change.js"></script>
+    <script src="./Case study 2_ Data visualisation_files/waffle-chart.js"></script>
+    <script src="./Case study 2_ Data visualisation_files/life-death-analysis.js"></script>
+
+    <!-- Add extra scripts below -->
+    <script src="./Case study 2_ Data visualisation_files/helper-functions.js"></script>
+    <script src="./Case study 2_ Data visualisation_files/gallery.js"></script>
+    <script src="./Case study 2_ Data visualisation_files/pie-chart.js"></script>
+    <script src="./Case study 2_ Data visualisation_files/waffle.js"></script>
+    <script src="./Case study 2_ Data visualisation_files/box.js"></script>
+    <script src="./Case study 2_ Data visualisation_files/bar.js"></script>
+      
+  </head>
+  <body data-new-gr-c-s-check-loaded="14.1098.0" data-gr-ext-installed="" cz-shortcut-listen="true">
+    <div id="app" class="container">
+      <ul id="visuals-menu"><li class="menu-item" id="tech-diversity-race">Tech Diversity: Race</li><li class="menu-item" id="tech-diversity-gender">Tech Diversity: Gender</li><li class="menu-item" id="pay-gap-by-job-2017">Pay gap by job: 2017</li><li class="menu-item" id="pay-gap-timeseries">Pay gap: 1997-2017</li><li class="menu-item" id="climate-change">Climate Change</li><li class="menu-item" id="uk-food-attitudes">UK Food Attitudes 2018</li><li class="menu-item" id="nutrients-timeseries">Nutrients: 1974-2016</li><li class="menu-item" id="waffle-chart">Waffle Chart</li><li class="menu-item selected" id="life-and-death-analyis">Life and Death Statistics</li></ul>
+    <canvas id="defaultCanvas0" width="1024" height="576" style="width: 1024px; height: 576px;"></canvas></div>
+  <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+<style>.tb_button {padding:1px;cursor:pointer;border-right: 1px solid #8b8b8b;border-left: 1px solid #FFF;border-bottom: 1px solid #fff;}.tb_button.hover {borer:2px outset #def; background-color: #f8f8f8 !important;}.ws_toolbar {z-index:100000} .ws_toolbar .ws_tb_btn {cursor:pointer;border:1px solid #555;padding:3px}   .tb_highlight{background-color:yellow} .tb_hide {visibility:hidden} .ws_toolbar img {padding:2px;margin:0px}</style><select style="position: absolute; left: 875px; top: 16px;"><option value="singapore">singapore</option><option value="ice_land">ice_land</option><option value="argentina">argentina</option><option value="australia">australia</option><option value="malaysia">malaysia</option><option value="japan">japan</option><option value="UAE">UAE</option><option value="france">france</option><option value="new_zealand">new_zealand</option><option value="germany">germany</option><option value="brazil">brazil</option><option value="cuba">cuba</option></select><select style="position: absolute; left: 990px; top: 16px;"><option value="Birth Rate">Birth Rate</option><option value="Death Rate">Death Rate</option><option value="Birth Rate and Death Rate">Birth Rate and Death Rate</option></select></body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>

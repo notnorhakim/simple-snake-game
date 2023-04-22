@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Snake Game</title>
+    <link rel="icon" href="/snake.png" type="image/icon type">
+    <style>
+      canvas {
+        border: 1px solid #000;
+        background-image: url('/snake1.png');
+        background-size: contain;
+      }
+      body{
+        text-align: center;
+      }
+#buttons-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 10px;
+  margin: 20px auto 0;
+  max-width: 400px;
+  align-content: center;
+  justify-content: center;
+}
+
+.button {
+  display: inline-block;
+  background-color: #ccc;
+  color: #000;
+  font-size: 50px;
+  font-weight: bold;
+  padding: 10px;
+  margin: 0;
+  border-radius: 10px;
+  box-shadow: 0 2px 2px rgba(0,0,0,0.3);
+  touch-action: manipulation;
+  height: 80px;
+  text-align: center;
+  
+}
+
+#up-button {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+#left-button {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+#right-button {
+  grid-column: 3;
+  grid-row: 2;
+}
+
+#down-button {
+  grid-column: 2;
+  grid-row: 2;
+}
+     
+    </style>
+  </head>
+  <body>
+    <audio id="game-over-audio">
+        <source src="/mike.wav" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+      <audio id="points-audio">
+        <source src="/points.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+      <audio id="mkh-audio">
+        <source src="/mkh.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+      <audio id="chad-audio">
+        <source src="/chad.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+    <canvas id="canvas" width="400" height="400"></canvas>
+    <div id="buttons-container">
+      <button class="button" id="up-button">&#x25B2;</button>
+      <button class="button" id="left-button">&#x25C0;</button>
+      <button class="button" id="right-button">&#x25B6;</button>
+      <button class="button" id="down-button">&#x25BC;</button>
+    </div>
+    
+    <script src="snake.js"></script>
+  </body>
+</html>
