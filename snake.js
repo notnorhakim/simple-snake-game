@@ -269,7 +269,7 @@ function gameLoop() {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
 
   // Get a random image
-  const gameOverImage = "/mike.png";
+  const gameOverImage = "mike.png";
   gameOverAudio.play();
   chadAudio.pause();
   // Display the image
@@ -288,7 +288,7 @@ function gameLoop() {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
 
       // Get a random image
-      const gameOverImage = "/mike.png";
+      const gameOverImage = "mike.png";
       gameOverAudio.play();
       chadAudio.pause();
       // Display the image
